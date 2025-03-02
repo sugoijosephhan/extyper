@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+		<meta name="description" content="Convert English to any of the 3 Warframe race languages">
+		<meta name="keywords" content="warframe,tenno,corpus,grineer,language,translate,translator,english">
+		<meta name="author" content="Clarvel">
+		<LINK REL="SHORTCUT ICON" HREF="images/corpus/cg.png">
+		<title>ExTyper B.E. Letters Convertor</title>
+	</head>
+
+	<body>
+		<p>Version：1.0.1.2024.9.6.0.16</p>
+		<table>
+			<tr>
+				<td>
+					<a href="index.html">
+						<img src="images/extyper.png" style="border:0">
+					</a>
+				</td>
+				<td>
+					<textarea id="text" placeholder="type here..." rows="4" cols="50" oninput="draw()" autofocus></textarea>
+				</td>
+				<td>
+					<select id="language" oninput="draw()">
+						<option value="corpus">B.E. Letters</option>
+					</select>
+					<br>
+					<input type="checkbox" id="background" value="false" onclick="backG()">Background
+					<br>
+					<!--input type="checkbox" id="logo" value="1" onInput="draw()">Race Logo
+					<br-->
+					<!--input type="button" id="displayGuide" onInput="displayGuide()">Show Guide
+					<br-->
+					<!--input type="checkbox" id="emphasis" value="1" onInput="draw()">Race Logo
+					<br-->
+					<button type="button" id="save" onClick="saveImg()">Save</button>
+				</td>
+				<td>
+					<span id="tOverride"><input type="checkbox" value="false" onclick="phonetic()">Override</span>
+					<span id="cBold"><input type="checkbox" value="false" onclick="bold()">Blod</span>
+					<br>
+					<button type="button" id="cheat" onClick="cheatsheet()">CheatSheet</button>
+				</td>
+			</tr>
+		</table>
+		<canvas id="renderWindow">Your browser does not support the HTML5 canvas tag.</canvas>
+
+		<script src="javascripts/main.js" type="text/javascript" id="main" onload="loaded()"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		
+<p>NOTE: B.E. letters use the octal number system. For punctuation, a comma is entered as the number "8" and a period is entered as the number "9".</p>
+<p>REMARQUE : Les Lettres B.E. utilisent le système numérique octal. Pour la ponctuation, une virgule est saisie comme le chiffre « 8 » et un point est saisi comme le chiffre « 9 ».</p>
+<p>Powered by Clarvel's TennoTyper.</p>
+<p>Copyright © 2017 - 2024 XZDXRZ & LAXIB3.</p>
+
+	</body>
+</html>
