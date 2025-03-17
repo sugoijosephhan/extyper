@@ -334,7 +334,7 @@ var corpus = new function(){
 
 	this.imgs = [];
 	this.bImgs = [];
-	chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ü', '1', '2', '3', '4', '5', '6', '7', '8', '9', '八', '九'];
+	chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ü', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '八', '九'];
 	for(var index = 0; index < chars.length; index += 1){ // gets images and puts them in imgs table
 		this.imgs[chars[index]] = new Image();
 		this.imgs[chars[index]].src = this.folder + this.pre + chars[index] + this.ext;
